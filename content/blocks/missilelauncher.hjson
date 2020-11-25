@@ -1,0 +1,47 @@
+type: ItemTurret
+name: Missile Launcher
+description: Long range missile launcher
+health: 700
+size: 2
+reloadTime: 40
+range: 700
+ammoUseEffect: casing1
+inaccuracy: 1
+rotatespeed: 0.4
+shots:4
+shootCone: 360
+ammoPerShot: 7
+burstSpacing: 3
+maxAmmo: 100
+ammoTypes: {
+  lead: {
+    speed: 8
+    type: FlakBulletType
+    damage: 120
+    width: 5
+    height: 25
+    lifetime: 150
+    fragbullets: 25
+    fragVelocityMax: 0
+    fragBullet: {
+        type: LiquidBulletType
+        liquid: slag
+        lifetime: 5
+        speed: 1
+    }
+    homingRange: 110
+    homingPower: 0.07
+    homingDelay:  2
+    splashDamage: 20
+    splashDamageRadius: 50
+    explodeRange: 40
+    collidesGround: true
+    hitEffect: flakExplosionBig
+  }
+}
+requirements: [
+  lead/540
+  copper/470
+]
+category: turret
+research: hail

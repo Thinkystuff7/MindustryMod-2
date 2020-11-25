@@ -1,0 +1,65 @@
+type: ItemTurret
+name: Minigun AA
+description: fire fast
+health: 700
+size: 2
+reloadTime: 1
+range: 960
+ammoUseEffect: casing1
+inaccuracy: 3
+rotateSpeed: 5
+shots:1
+shootCone: 17
+ammoPerShot: 1
+itemCapacity: 600
+ammoTypes: {
+  copper: {
+    speed: 5
+    type: FlakBulletType
+    damage: 70
+    width: 1
+    height: 5
+    lifetime: 150
+    fragbullets: 25
+    fragVelocityMax: 14
+    hitEffect: flakExplosionBig
+    ammoMultiplier: 7
+    splashDamageRadius: -1
+  }
+  lead: {
+    speed: 5
+    type: FlakBulletType
+    damage: 70
+    width: 1
+    height: 5
+    lifetime: 150
+    fragbullets: 25
+    fragVelocityMax: 14
+    hitEffect: flakExplosionBig
+    ammoMultiplier: 7
+    splashDamageRadius: -1
+  }
+  pyratite: {
+    speed: 4.85
+    type: FlakBulletType
+    damage: 70
+    explodeRange: 3
+    width: 1.5
+    height: 5
+    lifetime: 160
+    fragbullets: 25
+    fragVelocityMax: 14
+    hitEffect: flakExplosionBig
+    ammoMultiplier: 7
+    splashDamageRadius: 5
+    status: melting
+  }
+}
+targetAir:true
+targetGround: false
+requirements: [
+  lead/140
+  copper/170
+]
+category: turret
+research: hail

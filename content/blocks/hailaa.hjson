@@ -1,0 +1,70 @@
+type: ItemTurret
+name: AA
+description: Large caliber aa that can destroy groups of planes
+health: 700
+size: 2
+reloadTime: 120
+burstSpacing: 24
+range: 400
+ammoUseEffect: casing1
+inaccuracy: 4
+rotatespeed: 22
+shots:2
+shootCone: 17
+ammoPerShot: 1
+itemCapacity: 100
+maxAmmo : 100
+ammoTypes: {
+  copper: {
+    speed: 6
+    type: FlakBulletType
+    explodeRange: 50
+    damage: 112
+    width: 5
+    height: 5
+    lifetime: 144
+    fragBullet: {
+        type: BasicBulletType
+        speed: 4
+    }
+    hitEffect: flakExplosion
+    ammoMultiplier: 1
+  }
+  pyratite: {
+    speed: 5
+    type: FlakBulletType
+    explodeRange: 40
+    damage: 70
+    width: 10
+    height: 10
+    lifetime: 150
+    hitEffect: flakExplosion
+    ammoMultiplier: 7
+    splashDamageRadius: 45
+    splashDamage: 45
+    status: burning
+  }
+  
+  blast-compound: {
+    speed: 5
+    type: FlakBulletType
+    explodeRange: 40
+    damage: 170
+    width: 10
+    height: 10
+    lifetime: 150
+
+    hitEffect: flakExplosion
+    ammoMultiplier: 7
+    splashDamageRadius: 45
+    splashDamage: 70
+  }
+}
+targetAir:true
+targetGround: false
+requirements: [
+  lead/500
+  copper/750
+]
+category: turret
+research: hail

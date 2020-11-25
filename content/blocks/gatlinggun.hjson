@@ -1,0 +1,67 @@
+type: ItemTurret
+name: Gatling Gun
+description: fast
+health: 700
+size: 2
+reloadTime: 1
+range: 400
+ammoUseEffect: casing1
+inaccuracy: 1
+rotatespeed: 32
+shots:1
+shootCone: 17
+ammoPerShot: 2
+maxAmmo : 100
+
+ammoTypes: {
+  copper: {
+    speed: 5.4
+    type: FlakBulletType
+    damage: 35
+    width: .5
+    height: 2
+    lifetime: 150
+    fragbullets: 25
+    fragVelocityMax: 14
+    hitEffect: flakExplosionBig
+    ammoMultiplier: 41
+    collidesGround: true
+    
+  }	
+  lead: {
+    speed: 5.4
+    type: BasicBulletType
+    damage: 87
+    pierceCap: 3562
+    pierceBuilding: true
+    width: .5
+    height: 2
+    lifetime: 150
+    hitEffect: flakExplosionBig
+    ammoMultiplier: 71
+    collidesGround: true
+  }
+  pyratite: {
+    speed: 4.8
+    type: FlakBulletType
+    damage: 38
+    width: .75
+    height: 3
+    lifetime: 160
+    hitEffect: flakExplosionBig
+    ammoMultiplier: 1
+    splashDamageRadius: 1
+    collidesGround: true
+    frontColor: #ffc963
+    backColor: #ffc963
+    status: melting
+  }
+}
+targetAir:false
+targetGround: true
+requirements: [
+  lead/340
+  copper/370
+]
+category: turret
+research: hail

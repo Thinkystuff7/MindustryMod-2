@@ -1,0 +1,22 @@
+type: TractorBeamTurret
+name: pull
+description: wee
+health: 700
+size: 2
+range: 170
+force: 150
+rotatespeed: 32
+shots:1
+shootCone: 17
+hasPower: true
+powerUse: 2
+scaledForce: 17.5
+
+targetAir:true
+targetGround: false
+requirements: [
+  lead/140
+  copper/170
+]
+category: turret
+research: hail

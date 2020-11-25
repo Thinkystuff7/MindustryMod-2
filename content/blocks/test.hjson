@@ -1,0 +1,19 @@
+
+name: yoink
+description: "yoink"
+type: CoreBlock
+itemCapacity: 30
+destructible: true
+breakable: true
+hasItems: true
+buildPlaceability: always
+buildVisibility: shown
+health: 750
+size: 2
+unitCapModifier: 4
+requirements: [
+	 titanium/140 
+	 copper/560 
+]
+category: effect
+research: copper-wall

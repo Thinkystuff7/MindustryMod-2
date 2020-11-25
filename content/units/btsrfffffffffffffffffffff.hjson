@@ -1,0 +1,38 @@
+type: mech
+speed: .6
+health: 450
+weapons: [
+    {
+        name: gunstdve
+        top: false
+        x: 3
+        y: 2
+        reload: 7
+        bullet: {
+            type: BasicBulletType
+            damage: 12
+            speed: 6
+            width: 6
+            height: 8
+            frontColor: 9400D3
+            backColor: 9400D3
+            lifetime: 55
+            sprite: bullet
+            lightningColor: 9400D3
+            lightning: 2
+            lightningLength: 5
+            lightningLengthRand: 17
+            lightningDamage: 8
+        }
+    }
+]
+
+research: {
+    parent: ground-factory
+    requirements:
+    [
+        {item: surge-alloy, amount: 10},
+        {item: plastanium, amount: 1},
+        {item: silicon, amount: 10}
+    ]
+}

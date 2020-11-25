@@ -1,0 +1,23 @@
+type: TractorBeamTurret
+name: push
+description: wee
+health: 700
+size: 2
+range: 170
+force: 115
+scaledForce: -55.5
+rotatespeed: 32
+shots:1
+shootCone: 17
+hasPower: true
+powerUse: 2
+damage: 0.4
+
+targetAir:true
+targetGround: false
+requirements: [
+  lead/140
+  copper/170
+]
+category: turret
+research: hail
