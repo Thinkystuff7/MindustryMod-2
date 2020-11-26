@@ -32,7 +32,7 @@ ammoTypes: {
     speed: 5.4
     type: BasicBulletType
     damage: 87
-    pierceCap: 3562
+    pierceCap: 2
     pierceBuilding: true
     width: .5
     height: 2
@@ -57,7 +57,7 @@ ammoTypes: {
     status: melting
   }
 }
-targetAir:false
+targetAir: true
 targetGround: true
 requirements: [
   lead/340

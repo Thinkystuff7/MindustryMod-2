@@ -17,15 +17,17 @@ maxAmmo : 100
 ammoTypes: {
   copper: {
     speed: 6
-    type: FlakBulletType
-    explodeRange: 50
+    type: BasicBulletType
+
     damage: 112
     width: 5
+    pierceCap: 3
     height: 5
     lifetime: 144
     fragBullet: {
         type: BasicBulletType
         speed: 4
+	lifetime: 4
     }
     hitEffect: flakExplosion
     ammoMultiplier: 1
