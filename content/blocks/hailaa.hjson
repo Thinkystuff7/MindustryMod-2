@@ -13,24 +13,27 @@ shots:2
 shootCone: 17
 ammoPerShot: 1
 itemCapacity: 100
-maxAmmo : 100
+maxAmmo : 40
 ammoTypes: {
   copper: {
     speed: 6
     type: BasicBulletType
-
+    keepVelocity: true
     damage: 112
     width: 5
     pierceCap: 3
     height: 5
-    lifetime: 144
+    lifetime: 77
+        fragVelocityMin: 1
+	fragVelocityMax: 1
     fragBullet: {
         type: BasicBulletType
-        speed: 4
-	lifetime: 4
+	keepVelocity: true
+
+	lifetime: 14
     }
     hitEffect: flakExplosion
-    ammoMultiplier: 1
+    ammoMultiplier: 2
   }
   pyratite: {
     speed: 5
@@ -41,7 +44,7 @@ ammoTypes: {
     height: 10
     lifetime: 150
     hitEffect: flakExplosion
-    ammoMultiplier: 7
+    ammoMultiplier: 4
     splashDamageRadius: 45
     splashDamage: 45
     status: burning
@@ -53,7 +56,7 @@ ammoTypes: {
     explodeRange: 40
     damage: 170
     width: 10
-    height: 10
+    height: 15
     lifetime: 150
 
     hitEffect: flakExplosion
@@ -65,8 +68,8 @@ ammoTypes: {
 targetAir:true
 targetGround: false
 requirements: [
-  lead/500
-  copper/750
+  lead/100
+  copper/150
 ]
 category: turret
 research: hail

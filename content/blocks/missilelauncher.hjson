@@ -7,7 +7,7 @@ reloadTime: 40
 range: 700
 ammoUseEffect: casing1
 inaccuracy: 1
-rotatespeed: 0.4
+rotatespeed: 0.1
 shots:4
 shootCone: 360
 ammoPerShot: 7
@@ -19,10 +19,11 @@ ammoTypes: {
     type: FlakBulletType
     damage: 120
     width: 5
-    height: 25
+    height: 20
     lifetime: 150
     fragbullets: 25
     fragVelocityMax: 0
+    trailChance:.1
     fragBullet: {
         type: LiquidBulletType
         liquid: slag

@@ -1,0 +1,36 @@
+type: mech
+name: Mini railgun
+speed: .6
+health: 450
+weapons: [
+    {
+        name: minirailgun
+        top: true
+        x: 7
+        y: -3
+	mirror: false
+        reload: 57
+	recoil: 7
+        bullet: {
+	    shootEffect: lancerLaserCharge
+            type: RailBulletType
+	    length: 160
+	    updateEffectSeg: 20
+            pierceEffect: lightningCharge 
+            updateEffect: lancerLaserShootSmoke 
+	    pierceDamageFactor: 0.2
+            damage: 135
+            width: 6
+            height: 8
+            frontColor: 9400D3
+            backColor: 9400D3
+            lifetime: 55
+            sprite: bullet
+        }
+    }
+]
+
+research: {
+    parent: ground-factory
+
+}

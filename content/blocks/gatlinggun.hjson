@@ -9,7 +9,7 @@ ammoUseEffect: casing1
 inaccuracy: 1
 rotatespeed: 32
 shots:1
-shootCone: 17
+shootCone: 47
 ammoPerShot: 2
 maxAmmo : 100
 
@@ -17,28 +17,26 @@ ammoTypes: {
   copper: {
     speed: 5.4
     type: FlakBulletType
-    damage: 35
+    damage: 45
     width: .5
     height: 2
     lifetime: 150
-    fragbullets: 25
-    fragVelocityMax: 14
     hitEffect: flakExplosionBig
-    ammoMultiplier: 41
+    ammoMultiplier: 21
     collidesGround: true
     
   }	
   lead: {
     speed: 5.4
     type: BasicBulletType
-    damage: 87
+    damage: 47
     pierceCap: 2
     pierceBuilding: true
     width: .5
     height: 2
     lifetime: 150
     hitEffect: flakExplosionBig
-    ammoMultiplier: 71
+    ammoMultiplier: 21
     collidesGround: true
   }
   pyratite: {
@@ -49,7 +47,7 @@ ammoTypes: {
     height: 3
     lifetime: 160
     hitEffect: flakExplosionBig
-    ammoMultiplier: 1
+    ammoMultiplier: 22
     splashDamageRadius: 1
     collidesGround: true
     frontColor: #ffc963

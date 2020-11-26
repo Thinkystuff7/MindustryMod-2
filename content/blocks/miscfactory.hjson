@@ -12,9 +12,9 @@ requirements: [
 
 plans: [
   {
-    unit: btsrfffffffffffffffffffff
+    unit: minirailgunmech
     requirements: [
-      silicon/20
+      silicon/30
       lead/20
     ]
     time: 100
