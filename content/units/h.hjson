@@ -1,0 +1,30 @@
+type: mech
+speed: 1.5
+hitSize: 8
+health: 240
+weapons: [ {
+	reload: 27
+	x: 4
+	y: 2
+	top: false
+	ejectEffect: casing1
+        shots: 4
+        shotDelay: 7
+	inaccuracy: 3
+	targetAir: true
+	targetGround: false
+	bullet: {
+            type: BasicBulletType
+            damage: 12
+            speed: 5
+	    lifetime: 55
+            shootEffect: shootSmall
+            width: 6
+            height: 8
+            hitEffect: flakExplosion
+            splashDamage: 22
+            splashDamageRadius: 17
+            explodeRange: 7
+            collidesGround: false
+        }
+}]

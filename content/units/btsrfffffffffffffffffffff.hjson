@@ -31,8 +31,6 @@ research: {
     parent: ground-factory
     requirements:
     [
-        {item: surge-alloy, amount: 10},
-        {item: plastanium, amount: 1},
-        {item: silicon, amount: 10}
+        silicon/10
     ]
 }

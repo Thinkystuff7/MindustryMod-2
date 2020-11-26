@@ -1,30 +1,42 @@
 type: mech
-speed: 1.5
+name: AAmech
+speed: .7
 hitSize: 8
 health: 240
+targetAir: true
+targetGround: false
+mechFrontSway: 0.0
+mechSideSway: 0.05
 weapons: [ {
-	reload: 27
+	name: aagun
+	reload: 7
 	x: 4
 	y: 2
 	top: false
 	ejectEffect: casing1
-        shots: 4
-        shotDelay: 7
-	inaccuracy: 3
-	targetAir: true
-	targetGround: false
+	shootCone: 360
+	inaccuracy: 5
+
 	bullet: {
-            type: BasicBulletType
+            type: FlakBulletType
             damage: 12
             speed: 5
-	    lifetime: 55
+	    lifetime: 65
             shootEffect: shootSmall
             width: 6
             height: 8
             hitEffect: flakExplosion
             splashDamage: 22
             splashDamageRadius: 17
-            explodeRange: 7
+            explodeRange: 17
             collidesGround: false
         }
 }]
+research: {
+    parent: miscfactory
+    requirements:
+    [
+        silicon/900
+	lead/500
+    ]
+}
