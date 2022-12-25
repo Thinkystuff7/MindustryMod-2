@@ -26,7 +26,7 @@ ammoTypes: {
     collidesGround: true
     
   }	
-  lead: {
+  carbide: {
     speed: 5.4
     type: BasicBulletType
     damage: 47
@@ -58,8 +58,8 @@ ammoTypes: {
 targetAir: true
 targetGround: true
 requirements: [
-  lead/340
-  copper/370
+  beryllium/340
+
 ]
 category: turret
 research: hail
