@@ -3,14 +3,14 @@ name: Gatling Gun
 description: fast
 health: 700
 size: 2
-reloadTime: 1
+reloadTime: 0.3
 range: 400
 ammoUseEffect: casing1
 inaccuracy: 1
 rotatespeed: 32
 shots:1
 shootCone: 47
-ammoPerShot: 2
+ammoPerShot: 1
 maxAmmo : 100
 
 ammoTypes: {
@@ -29,15 +29,16 @@ ammoTypes: {
   carbide: {
     speed: 5.4
     type: BasicBulletType
-    damage: 47
-    pierceCap: 2
+    damage: 947
+    pierceCap: 25
     pierceBuilding: true
-    width: .5
-    height: 2
-    lifetime: 150
+    width: 1.5
+    height: 6
+    lifetime: 550
     hitEffect: flakExplosionBig
     ammoMultiplier: 21
     collidesGround: true
+    collidesAir: true
   }
   pyratite: {
     speed: 4.8
