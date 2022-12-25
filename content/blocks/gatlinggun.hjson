@@ -12,7 +12,7 @@ shots:1
 shootCone: 47
 ammoPerShot: 2
 maxAmmo : 100
-
+research: silicon-arc-furnace
 ammoTypes: {
   copper: {
     speed: 5.4
